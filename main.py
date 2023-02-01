@@ -186,7 +186,7 @@ class MainWindow(QMainWindow):
         # LOAD DEFAULT HOME PAGE (GOOLE.COM)
         #url = http://www.duckduckgo.com,
         #label = Homepage
-        self.add_new_tab(QUrl('https://search1234.tk/'), 'Homepage')
+        self.add_new_tab(QUrl('https://google.com/'), 'Homepage')
 
         # SHOW MAIN WINDOW
         self.show()
@@ -198,7 +198,7 @@ class MainWindow(QMainWindow):
     def add_new_tab(self, qurl=None, label="Blank"):
         # Check if url value is blank
         if qurl is None:
-            qurl = QUrl('https://search1234.tk/')#pass empty string to url
+            qurl = QUrl('https://google.com/')#pass empty string to url
 
         # Load the passed url
         browser = QWebEngineView()
@@ -284,7 +284,7 @@ class MainWindow(QMainWindow):
 
     # NAVIGATE TO DEFAULT HOME PAGE
     def navigate_home(self):
-        self.tabs.currentWidget().setUrl(QUrl("https://search1234.tk/"))
+        self.tabs.currentWidget().setUrl(QUrl("https://google.com/"))
 
 
 
@@ -299,7 +299,7 @@ app.setApplicationName("Tytans Browser")
 # APPLICATION COMPANY NAME
 app.setOrganizationName("Tytans Browser")
 # APPLICATION COMPANY ORGANISATION
-app.setOrganizationDomain("Tysudo.tk")
+app.setOrganizationDomain("thetytan.com")
 
 
 window = MainWindow()
